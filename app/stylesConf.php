@@ -1,5 +1,7 @@
 <?php
-$stylesOptions = ["light", "dark", "arasaka"];
+$stylesOptions = ["light", "dark"];
+
+$theme = $_COOKIE["theme"] ?? "light";
 
 function verificarStyles(&$theme, $stylesOptions) :bool {
     if (!is_string($theme) || !in_array($theme, $stylesOptions)) {
