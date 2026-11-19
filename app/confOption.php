@@ -15,7 +15,7 @@ function generateOptions(array $options): void
     foreach ($options as $option) {
         $opcionSaneada = sanitationChars($option);
 
-        echo "<option value=\"{$opcionSaneada}\">{$opcionSaneada}</option>";
+        echo "<option value='$opcionSaneada'>$opcionSaneada</option>";
 
     }
 }
