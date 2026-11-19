@@ -1,8 +1,11 @@
 <?php
 declare(strict_types=1);
 require_once __DIR__ . "/stylesConf.php";
-require_once __DIR__ . "/../securityTools/HttpsToolsSec.php";
-require_once __DIR__ . "/../securityTools/verificarionsChars.php";
+require_once __DIR__ . "/../tools/security.php";
+
+$theme = $_COOKIE["theme"] ?? "light";
+$error = null;
+$stylesOptions = ["light", "dark", "arasaka"];
 
 session_set_cookie_params(
     [
@@ -13,4 +16,3 @@ session_set_cookie_params(
         "samesite" => "Lax",
     ]
 );
-

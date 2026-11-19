@@ -16,8 +16,6 @@
     "platform-dev": {},
     "plugin-api-version": "2.9.0",
 
-    "script":{
-        "server":"php -S localhost:8000"
-    }
+
 }
 
