@@ -5,7 +5,7 @@ $stylesOptions = ['light', 'dark'];
 $languageOptions = ['es', 'en'];
 $elementsOptions = ['10', '20', '50'];
 
-function verifyOption(mixed $value, array $options): bool
+function verifyOption( $value, array $options): bool
 {
     return is_string($value) && in_array($value, $options);
 }
