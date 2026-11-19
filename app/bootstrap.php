@@ -1,17 +1,22 @@
 <?php
 declare(strict_types=1);
-require_once __DIR__ . "/stylesConf.php";
+require_once __DIR__ . "/confOption.php";
 require_once __DIR__ . "/../tools/security.php";
 
 $stylesOptions = ["light", "dark"];
 $languageOptions = ["es", "en"];
 $elementsOptions = ["10", "20", "50"];
-session_set_cookie_params(
-    [
-        "httponly" => true,
-        "secure" =>requestHTTPS(),
-        "path" => "/",
-        "lifetime" => 0,
-        "samesite" => "Lax",
-    ]
-);
+
+
+$theme = $_COOKIE['theme'] ?? 'light';
+$language = $_COOKIE['language'] ?? 'es';
+$elements = $_COOKIE['elements'] ?? 10;
+
+
+$cookieOptions = [
+    'expires' => time() + (30 * 24 * 60 * 60),
+    'path' => '/',
+    'secure' => requestHTTPS(),
+    'httponly' => true,
+    'samesite' => 'Lax',
+];

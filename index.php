@@ -1,7 +1,5 @@
 <?php
-
-
-require __DIR__ . '/back/conf/bootstrap.php';
+require __DIR__ . '/app/bootstrap.php';
 
 ?>
 
@@ -11,7 +9,7 @@ require __DIR__ . '/back/conf/bootstrap.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Index</title>
-    <link rel="stylesheet" href="/back/css/styles/styles.css">
+    <link rel="stylesheet" href="public/assets/style.css">
 </head>
 <body class="bg-<?=sanitationChars($theme)?>">
     <dic>
@@ -32,7 +30,7 @@ require __DIR__ . '/back/conf/bootstrap.php';
 
     </div>
     <div>
-        <a href="front/views/preferencesHTML.php"><button>Preferencias</button></a>
+        <a href="public/preferences.php"><button>Preferencias</button></a>
     </div>
 </body>
 </html>
