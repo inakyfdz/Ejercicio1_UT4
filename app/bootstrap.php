@@ -9,7 +9,7 @@ $elementsOptions = ["10", "20", "50"];
 
 
 $theme = $_COOKIE['theme'] ?? 'light';
-$language = $_COOKIE['language'] ?? 'es';
+$languaje = $_COOKIE['languaje'] ?? 'es';
 $elements = $_COOKIE['elements'] ?? 10;
 
 

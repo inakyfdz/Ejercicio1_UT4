@@ -65,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Preferencias</title>
-    <link rel="stylesSheet" href="assets/style.css"
+    <link rel="stylesheet" href="/public/assets/style.css">
 </head>
 <body class="bg-<?=sanitationChars($theme)?>">
 <form action="" method="post">
@@ -83,5 +83,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </select>
     <button type="submit">Enviar</button>
 </form>
+<a href="../index.php"><button>Indice</button></a>
 </body>
 </html>

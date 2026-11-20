@@ -1,6 +1,4 @@
-
 <?php
-
 $stylesOptions = ['light', 'dark'];
 $languageOptions = ['es', 'en'];
 $elementsOptions = ['10', '20', '50'];

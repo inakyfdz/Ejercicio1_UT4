@@ -1,10 +1,4 @@
 {
-
-  "description": "Ejercicio1",
-  "Version": "1.0.0",
-  "require": {
-    "php": "8.5.*"
-  },
   "script":{
     "server":"php -S localhost:8000"
   }
